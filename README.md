@@ -1,4 +1,7 @@
 # Steam-API-Crawler
+
+Made in January 2023
+
 Personal project that accesses the Steam public API to make a database on information about your Steam friends and the games played by said social network.
 
 This project was the capstone project I did  for the Python for Everybody Specialization from the University of Michigan in Coursera. 
