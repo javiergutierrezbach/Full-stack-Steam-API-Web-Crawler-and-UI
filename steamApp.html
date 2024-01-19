@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Steam Friends</title>
+        <link rel="stylesheet" href="steamAppStyle.css">
+        <script src="steamAppScript.js" ></script>
+    </head>
+    <body>
+        <div class="background">
+                
+            <div id="description-box">
+            
+                <h2>WELCOME TO STEAM FRIENDS</h2>
+
+                <div id="description">
+                    <p>Using this tool, look up the data trends within the web of friends you have made through your Steam history.</p>
+                    <p>The information is based from a single user's friends, and the friends' friends, and the friends' friends....</p>
+                    <p>This data, obtained from Steam's API, is stored in a SQL database, which you can access using this user interface.</p>
+                    <p>Look through the queries below and prompt our database for data on your friends and favorite games.</p>
+                    <p>The rankings will appear in a table below.</p>
+                </div>
+
+            </div>
+    
+            <div id="bar_sect">
+                <h4>BROWSE</h4>
+                <div id="bar">
+                    <button class="arrow" id="left" onclick="left()">
+                        <img src="arrow-down-3101.png" alt="Arrow pointing to the left." class="arrowimg" id="arrowleft">
+                    </button>
+                    <div class="query" id="query0">
+                        <p>TELL US A PLAYER TO FIND THEIR MOST PLAYED GAMES!</p>
+                    </div>
+                    <button class="arrow" id="right" onclick="right()">
+                        <img src="arrow-down-3101.png" alt="Arrow pointing to the right." class="arrowimg" id="arrowright">
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="inputs">
+                <div class="inputboxes">
+                    <input type="text" value="Enter username..." id="name" onclick="removeVal(this)">
+                <input type="text" value="How many games?" id="num" onclick="removeVal(this)">
+                </div>
+                <button onclick="query0()" class="submit">
+                    SUBMIT
+                </button>
+            </div>
+            <div class="qtitle">
+
+            </div>
+            <div class="resultbox">
+       
+            </div>
+
+
+        </div>
+        
+    </body>
+</html>
