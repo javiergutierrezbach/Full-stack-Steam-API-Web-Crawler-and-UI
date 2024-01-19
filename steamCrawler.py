@@ -40,12 +40,14 @@ if row is not None:
     cur.execute('SELECT SteamID FROM Friends WHERE ID = 1')
     steamID = cur.fetchone()[0]
 else:
-    steamID = input('Enter your Steam ID or enter:')
-    if (len(steamID) < 1):
-        steamID = '76561198080394649'
-    if (len(steamID) > 1):
+    while True:
+        steamID = input('Enter your Steam ID:')
+        if (len(steamID) < 1):
+            continue
+    
         cur.execute('INSERT OR IGNORE INTO Friends (steamID) VALUES (?)', (steamID, ))
-    conn.commit()
+        conn.commit()
+        break
     
 startfriendlisturl = 'https://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key='
 key = Key()
