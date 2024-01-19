@@ -12,7 +12,7 @@ If you have a Key, the first file to run is steamcrawler.py which will get all t
 
 ------  Front-End Context and Instructions  ------
 
-I built a front-end GUI for the user to access this data from the database more easily, rather than running the scripts. With that in mind, I created an application for the browser which tries to emulate the styling of the actual Steam webpage. The page is built in HTML, CSS and javascript. The HTML can be run on its own to open it on the browser, but the queries won't work. There is also javascript that needs to run in the backend with the Node.js framework. It needs to make a server on the local host with express. Once you run this, you can access all of the queries in the web page.
+I built a front-end GUI for the user to access this data from the database more easily, rather than running the scripts. With that in mind, I created an application for the browser which tries to emulate the styling of the actual Steam webpage. The page is built in HTML, CSS and javascript. The HTML can be run on its own to open it on the browser, but the queries won't work. There is also javascript that needs to run in the backend with the Node.js framework. It needs to make a server on the local host with express. Once you run this using 'node server.js', you can access all of the queries in the web page.
 
 Software and modules for js that you need to install before running this are Node.js, cors, sqlite3.
 
